@@ -43,8 +43,6 @@ data.info()
 ```py3
 print("data isnull:")
 data.isnull().sum()
-```
-```py3
 x=data["v1"].values
 y=data["v2"].values
 ```
@@ -56,8 +54,6 @@ cv = CountVectorizer()
 x_train = cv.fit_transform(x_train)
 x_test = cv.transform(x_test)
 print("y_prediction  value:")
-```
-```py3
 from sklearn.svm import SVC
 svc=SVC()
 svc.fit(x_train,y_train)
